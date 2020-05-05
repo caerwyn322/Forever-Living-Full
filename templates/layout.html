@@ -1,0 +1,107 @@
+{% load static %}
+
+<!DOCTYPE>
+<html lang="en" xmlns="http://www.w3.org/1999/html" class="animated">
+	<head>
+		<title>Forever Living</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="{% static 'css/uikit.min.css'%}" />
+		<link rel="stylesheet" href="{% static 'css/home.css'%}"/>
+        <script src="{% static 'js/uikit.min.js'%}"></script>
+        <script src="{% static 'js/uikit-icons.min.js'%}"></script>
+
+	</head>
+    <body>
+		<div class="nav">
+			<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar uk-grid>
+				<div class="uk-navbar-left">
+
+				</div>
+				<div class="uk-navbar-right" uk-grid>
+					<ul class="uk-navbar-nav">
+						<li class=" uk-button"><a href="/home.html/">Home</a></li>
+						<li class="uk-active"><a href="/products.html/">Products</a></li>
+						<li class="uk-parent"><a href="">Services
+							<div class="uk-navbar-dropdown">
+								<ul class="uk-nav uk-navbar-dropdown-nav">
+									<li><a href="">Service 1</a></li>
+									<li><a href="">Service 2</a></li>
+									<li><a href="">Service 3</a></li>
+								</ul>
+							</div>
+						</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Gallery</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class=content">
+            {% block content%}
+            {% endblock %}
+        </div>
+		<div class="media-links">
+			<a href="" class="uk-icon-button" uk-icon="facebook"></a>
+			<a href="" class="uk-icon-button" uk-icon="twitter"></a>
+			<a href="" class="uk-icon-button" uk-icon="google-plus"></a>
+			<a href="" class="uk-icon-button" uk-icon="instagram"></a>
+		</div>
+		<div class="footer ">
+			<div class="uk-section uk-height-large">
+				<div class="uk-container sec-container uk-grid-match uk-child-width-1-3@m" uk-grid>
+					<div class="foot-section-one">
+						<div class="philo">
+							<h3 class="uk-text-bold uk-text-left uk-text-capitalize">Our Philosophy</h3>
+							<p class="uk-text-small uk-text-left uk-text-italic">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."</p>
+						</div>
+						<div class="company-info">
+							<h3 class="uk-text-capitalize uk-text-bold uk-text-left">About our Company</h3>
+							<div class="company-card uk-card uk-grid-collapse uk-width-1-1" uk-grid>
+								<div class="footer-logo uk-card-media-left uk-cover-container uk-width-1-3">
+									<img data-src="{% static 'images/kris.jpg'%}" alt="Company Logo" uk-cover uk-img>
+									<canvas width="600" height="400"></canvas>
+								</div>
+								<div class="company-text uk-width-1-2">
+										<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+										<a class="uk-text-small" href=""> Read more ></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="foot-section-two">
+						<h3 class="uk-text-left uk-text-capitalize uk-text-bold">Contact Us</h3>
+						<div class="contact-details">
+							<p class="uk-text-small"><span uk-icon="location"></span><span class="uk-text-bold"> Address:</span> 64 Kintyre Drive, Bloomfield, CHCH, NZ</p>
+							<p class="uk-text-small"><span uk-icon="mail"></span><span class="uk-text-bold"> Email:</span> JChristmasB@gmail.com</p>
+							<p class="uk-text-small"><span uk-icon="receiver"></span><span class="uk-text-bold"> Phone:</span> 09174177874</p>
+						</div>
+					</div>
+					<div class="foot-section-three">
+						<form class="message-form">
+							<fieldset class="uk-fieldset">
+								<legend class="uk-legend uk-text-capitalize uk-text-bold">Leave a message</legend>
+								<div class="top-form uk-margin">
+									<input class="uk-input name uk-form-width-medium " type="email" placeholder="Your Email" name="customer_email">
+									<input class="uk-input uk-form-width-medium" name="customer_name" type="text" placeholder="Your Name">
+								</div>
+								 <div class="uk-margin">
+									<textarea class="uk-textarea " rows="5" placeholder="Your Message" name="customer_message"></textarea>
+								</div>
+								 <button class="submit-btn uk-button uk-width-1-1">Submit</button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<hr class="uk-divider-icon">
+				<div class="footer-copyright">
+
+				</div>
+			</div>
+		</div>
+		<script>
+
+		</script>
+	</body>
+</html>
